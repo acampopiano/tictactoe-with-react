@@ -24,6 +24,7 @@ export const App = () => {
 		let currentGameBoard = gameBoard;
 		currentGameBoard.splice(loc, 1, playerTurn);
 		setGameBoard(currentGameBoard);
+
 		let topRow = gameBoard[0] + gameBoard[1] + gameBoard[2];
 		if (topRow.match(/XXX|OOO/)) {
 			setWinner(winner => playerTurn);

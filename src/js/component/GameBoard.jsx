@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 export const GameBoard = props => {
 	const gameClick = props => {
 		props.updateBoard(props.loc, props.turn);
-		//console.log(			"Turn: " +				props.loc +				"Turn: " +				props.turn +				"Value: " +				props.value		);
 	};
 	return (
 		<div
