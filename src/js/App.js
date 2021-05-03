@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { GamePlayer } from "./component/GamePlayer.jsx";
 import { ResetButton } from "./component/ResetButton.jsx";
 import { GameBoard } from "./component/GameBoard.jsx";
-
+import { PlayerTurn } from "./component/PlayerTurn.jsx";
 export const App = () => {
 	const [gameBoard, setGameBoard] = useState([
 		" ",
@@ -79,6 +79,7 @@ export const App = () => {
 		<div className="container">
 			<div className="page-header">
 				<h1 className="text-center">Tic-Tac-Tow With React</h1>
+				<PlayerTurn playerTurn={playerTurn} />
 				<GamePlayer winner={winner} />
 				<div className="d-flex justify-content-center">
 					<ResetButton reset={resetBoard} />
