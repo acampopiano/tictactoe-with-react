@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/*import React, { useState, useEffect } from "react";
 
 //create your first component
 export function Home() {
@@ -45,7 +45,7 @@ export function Home() {
 	};
 */
 	
-    function calculateWinner(squares) {
+    /*function calculateWinner(squares) {
   const lines = [
     //winner rows
     [0, 1, 2],
@@ -68,7 +68,7 @@ export function Home() {
   return null;
 }
 */
-
+/*
 	useEffect(resultado, [game]);
 	const verificarTurno = e => {
 		let indice = 0;
@@ -156,4 +156,4 @@ export function Home() {
 			</div>
 		</div>
 	);
-}
+}*/
