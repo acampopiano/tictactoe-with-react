@@ -79,7 +79,8 @@ export const App = () => {
 		<div className="container">
 			<div className="page-header">
 				<h1 className="text-center">Tic-Tac-Tow With React</h1>
-				{!winner} ? <PlayerTurn playerTurn={playerTurn} />:
+				{!winner} ?{" "}
+				<PlayerTurn playerTurn={playerTurn} winner={winner} />:
 				<GamePlayer winner={winner} />
 				<div className="d-flex justify-content-center">
 					<ResetButton reset={resetBoard} />
