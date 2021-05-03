@@ -13,7 +13,7 @@ const App = () => {
     const [winner, setWinner] = useState("");
 
     const updateBoard=(loc, player)=>{
-
+        
     }  
     const resetBoard= ()=>{
 
