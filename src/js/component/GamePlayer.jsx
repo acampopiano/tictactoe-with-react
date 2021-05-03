@@ -4,7 +4,11 @@ export const GamePlayer = props => {
 	return (
 		<div className={props.winner ? "visible" : "hidden"}>
 			<h2 className="text-center">
-				Ganador: Player {props.winner} Game Over
+				{props.winner === "X" || props.winner === "O" ? (
+					<span className="text-danger">{props.winner} WIN!</span>
+				) : (
+					<span className="text-danger">{props.winner}</span>
+				)}
 			</h2>
 		</div>
 	);

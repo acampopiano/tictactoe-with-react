@@ -66,7 +66,7 @@ export const App = () => {
 			return;
 		}
 		let moves = gameBoard.join("").replace(/ /g, "");
-		if (moves.length === 9) setWinner({ winner: "d" });
+		if (moves.length === 9) setWinner(winner => "No Winners");
 
 		setPlayerTurn(playerTurn => (player === "X" ? "O" : "X"));
 	};
@@ -79,7 +79,7 @@ export const App = () => {
 		<div className="container">
 			<div className="page-header">
 				<h1 className="text-center">Tic-Tac-Tow With React</h1>
-				<PlayerTurn playerTurn={playerTurn} />
+				{!winner} ? <PlayerTurn playerTurn={playerTurn} />:
 				<GamePlayer winner={winner} />
 				<div className="d-flex justify-content-center">
 					<ResetButton reset={resetBoard} />
